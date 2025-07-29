@@ -29,8 +29,17 @@ int main() {
   float pib1;
   int ponto1;
 
+  char estado2;
+  char codigo2[10];
+  char nome2[30];
+  int populacao2;
+  float area2;
+  float pib2;
+  int ponto2;
+
+  printf("carta 1:\n");
   printf("Digite o estado: ");
-  scanf("%c", &estado1);
+  scanf(" %c", &estado1);
 
   printf("Digite o Código da carta: ");
   scanf("%s", codigo1); 
@@ -47,8 +56,31 @@ int main() {
   printf("Digite o PIB: ");
   scanf("%f", &pib1);
 
-  printf("Digite o Número de pontos turísticos");
+  printf("Digite o Número de pontos turísticos: ");
   scanf("%d", &ponto1);
+
+  printf("carta 2:\n");
+  printf("Digite o estado 2: ");
+  scanf(" %c", &estado2);
+
+  printf("Digite o Código da carta 2: ");
+  scanf("%s", codigo2);
+
+  printf("Digite o nome da Cidade 2: ");
+  scanf("%s", nome2);
+
+  printf("Digite a população 2: ");
+  scanf("%d", &populacao2);
+
+  printf("Digite a Área 2: ");
+  scanf("%f", &area2);
+
+  printf("Digite o PIB 2: ");
+  scanf("%f", &pib2);
+
+  printf("Digite o Número de Pontos Turísticos 2: ");
+  scanf("%d", &ponto2);
+  printf("\n");
 
   printf("===Dados da Carta 1 Cadastrados===\n");
   printf("\n");
@@ -56,9 +88,22 @@ int main() {
   printf("Código: %s\n", codigo1);
   printf("Cidade: %s\n", nome1);
   printf("População: %d\n", populacao1);
-  printf("Área: %.2f km2 \n,", area1);
-  printf("PIB: %.2f\n", pib1);
+  printf("Área: %.2f km2 \n", area1);
+  printf("PIB: %.2f bilhões de reais\n", pib1);
   printf("Pontos: %d\n", ponto1);
+  printf("\n");
 
+  printf("===Dados da carta 2 Cadastrados===\n");
+  printf("\n");
+  printf("Estado: %c\n", estado2);
+  printf("Código: %s\n", codigo2);
+  printf("Cidade: %s\n", nome2);
+  printf("População: %d\n", populacao2);
+  printf("Área: %.2f km2\n", area2);
+  printf("PIB: %.2f bilhões de reais\n", pib2);
+  printf("Pontos: %d\n", ponto2);
+  printf("\n");
+
+   return 0;
 }
 
