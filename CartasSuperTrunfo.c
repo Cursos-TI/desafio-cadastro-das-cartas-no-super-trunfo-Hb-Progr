@@ -86,10 +86,10 @@ int main() {
   scanf("%d", &ponto2);
   printf("\n");
 
-  densidade1 = (populacao1 / area1);
-  carpita1 = (populacao1 / pib1);
-  densidade2 = (populacao2 / area2);
-  carpita2 = (populacao2 / pib2);
+  densidade1 = (float)populacao1 / (area1);
+  carpita1 = (pib1 * 1000000000.0f)/(float)populacao1;
+  densidade2 = (float)populacao2 / (area2);
+  carpita2 = (pib2 * 1000000000.0f) / (float) populacao2;
 
   printf("===Dados da Carta 1 Cadastrados===\n");
   printf("\n");
