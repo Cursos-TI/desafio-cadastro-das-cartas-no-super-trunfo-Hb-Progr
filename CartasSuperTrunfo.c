@@ -28,6 +28,8 @@ int main() {
   float area1;
   float pib1;
   int ponto1;
+  float densidade1;
+  float carpita1;
 
   char estado2;
   char codigo2[10];
@@ -36,6 +38,8 @@ int main() {
   float area2;
   float pib2;
   int ponto2;
+  float densidade2;
+  float carpita2;
 
   printf("carta 1:\n");
   printf("Digite o estado: ");
@@ -82,6 +86,11 @@ int main() {
   scanf("%d", &ponto2);
   printf("\n");
 
+  densidade1 = (populacao1 / area1);
+  carpita1 = (populacao1 / pib1);
+  densidade2 = (populacao2 / area2);
+  carpita2 = (populacao2 / pib2);
+
   printf("===Dados da Carta 1 Cadastrados===\n");
   printf("\n");
   printf("Estado: %c\n", estado1);
@@ -91,6 +100,8 @@ int main() {
   printf("Área: %.2f km2 \n", area1);
   printf("PIB: %.2f bilhões de reais\n", pib1);
   printf("Pontos: %d\n", ponto1);
+  printf("Densidade Populacional: %.2f hab/km2\n", densidade1);
+  printf("PIB per Capita: %.2f reais\n", carpita1);
   printf("\n");
 
   printf("===Dados da carta 2 Cadastrados===\n");
@@ -102,7 +113,10 @@ int main() {
   printf("Área: %.2f km2\n", area2);
   printf("PIB: %.2f bilhões de reais\n", pib2);
   printf("Pontos: %d\n", ponto2);
+  printf("Densidade Populacional: %.2f hab/km2\n", densidade2);
+  printf("PIB per Capita: %.2f reais\n", carpita2);
   printf("\n");
+
 
    return 0;
 }
